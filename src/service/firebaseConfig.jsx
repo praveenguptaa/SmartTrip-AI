@@ -2,9 +2,9 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB_-rAeseQOnEldbut9_bWWm-4u4g2wXJM",
-  authDomain: "webd-b59df.firebaseapp.com",
-  projectId: "webd-b59df",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   storageBucket: "webd-b59df.firebasestorage.app",
   messagingSenderId: "317702205688",
   appId: "1:317702205688:web:278c1f9828e3030bb08b0d",
